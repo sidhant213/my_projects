@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignupPage</title>
+    <link rel="stylesheet" href="SignupPage.css">
+</head>
+<body>
+    <div id="image_container" class="containers"></div>
+    <div id="signup_container" class="containers">
+        <h1 id="signup_heading">SignUp</h1>
+        <form action="">
+            <input type="text" name="FirstName" id="firstname_inputbox" placeholder="FirstName" class="inputs">
+            <br>
+            <input type="text" name="LastName" id="lastname_inputbox" placeholder="LastName" class="inputs">
+            <input type="email" name="Email" id="email_inputbox" placeholder="Email" class="inputs">
+            <br>
+            <div id="gender_container">
+                <span class="gender_names">Gender</span>
+                <input type="radio" name="Gender" id="" class="radio_buttons"><span class="gender_names">Male</span>
+                <input type="radio" name="Gender" id="" class="radio_buttons"><span class="gender_names">Female</span>
+                <input type="radio" name="Gender" id="" class="radio_buttons"><span class="gender_names">TransGender</span>
+            </div>
+            <div id="checkbox_container">
+                <input type="checkbox" name="TermsCheckBox" id="terms_checkbox"><span id="checkbox_name">Terms and Conditions</span>
+            </div>
+            <input type="submit" id="register_button">
+        </form>
+        <a href="#" id="already_statement">Already have account??</a>
+    </div>
+</body>
+</html>

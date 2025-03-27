@@ -1,0 +1,107 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+@font-face{
+    font-family: ProductSans;
+    src: url(../assets/fonts/ProductSansRegular.ttf);
+}
+@font-face{
+    font-family: NeueMachina;
+    src: url(../assets/fonts/NeueMachina-Regular.otf);
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-image: radial-gradient(circle at top left,gray,blue,gray);
+}
+.containers{
+    position: absolute;
+    border-radius: 5vw;
+}
+#image_container{
+    width: 75vw;
+    height: 75vh;
+    background-image: url(../assets/images/BlueNatureImage.jpg);
+    background-size: 100% 100%;
+    top: 12.5vh;
+    left: 12.5vw;
+}
+#signup_container{
+    width: 50vw;
+    height: 60vh;
+    background-color: transparent;
+    top: 20vh;
+    left: 25vw;
+    backdrop-filter: blur(5vw);
+}
+#signup_heading{
+    font-size: 5vw;
+    font-family: ProductSans;
+    letter-spacing: 1vw;
+    color: white;
+    text-shadow: 0.5vw 0.5vw 0.5vw black;
+    text-align: center;
+}
+.inputs{
+    width: 50%;
+    height: 3.5vh;
+    font-size: 2vw;
+    border: none;
+    outline: none;
+    border-bottom: 0.3vw solid white;
+    background-color: transparent;
+    color: white;
+    text-shadow: 0.3vw 0.3vw 0.3vw black;
+    position: relative;
+    top: 3vh;
+    left: 2vw;
+    margin-bottom: 1.5vh;
+    padding-bottom: 0.3vh;
+}
+.inputs::placeholder{
+    color: white;
+}
+#gender_container,#checkbox_container{
+    font-size: 2vw;
+    color: white;
+    font-family: ProductSans;
+    position: relative;
+    top: 2vh;
+    left: 2vw;
+}
+.radio_buttons,#terms_checkbox{
+    width: 1.5vw;
+    height: 1.5vw;
+    margin: 0vw 0.5vw 0vw 0.5vw;
+}
+.gender_names,#checkbox_name{
+    text-shadow: 0.3vw 0.3vw 0.3vw black;
+}
+#register_button{
+    width: 12vw;
+    height: 6vh;
+    font-size: 1.95vw;
+    font-family: ProductSans;
+    border-radius: 1vw;
+    border: none;
+    outline: none;
+    transition: transform 100ms linear;
+    position: relative;
+    top: 5vh;
+    left: 18.5vw;
+    letter-spacing: 0.75vw;
+    font-weight: bold;
+    cursor: pointer;
+}
+#register_button:active{
+    transform: scale(0.95);
+}
+#already_statement{
+    font-size: 2vw;
+    font-family: NeueMachina;
+    color: white;
+    position: relative;
+    top: 5vh;
+    left: 12vw;
+}
