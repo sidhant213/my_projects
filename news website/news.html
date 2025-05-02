@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Website</title>
+    <link rel="stylesheet" href="news.css">
+  
+
+</head>
+<body>
+    <div class="container">
+        <nav>
+
+            <div class="logo">
+                <h1>Daily news</h1>
+
+                <li id="politics" onclick="navClick('politics')">politic news</li>
+                <li id="sport" onclick="navClick('sport')">Sport news</li>
+                <li id="Bollywood" onclick="navClick('Bollywood')">Bollywood News</li>  
+            </div>
+            <br>
+            <div class="category">
+                <h1 id="type"></h1>
+            </div>
+            <div class="searchBar">
+                <input type="text" placeholder="Search..." value="" id="inputData">
+                <button type="submit" id="searchBtn" >Search</button>
+            </div>
+        </nav>
+
+        <div class="cardData">
+           
+        </div>
+    </div>
+    <script  src="news.js" ></script>
+   
+</body>
+</html>
